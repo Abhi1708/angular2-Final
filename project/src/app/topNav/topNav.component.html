@@ -1,0 +1,18 @@
+
+<nav class="navbar navbar-default nav-ss">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul>
+       <a class="navbar-brand" href="#"> 
+       <!-- <span><img class="transparent" alt="http://localhost:8602/pe/common/images/icons-ic-app-ss-inv.png" src="http://localhost:8602/pe/common/images/icons-ic-app-ss-inv.png"></span> -->
+       &nbsp;Loan Selling Advisor<span class="servicemark"></span></a>
+        <menu *ngFor="let menu of menus"  [menu]="menu">
+          
+        </menu>    
+
+        <sellerInfo [sellerInfo]="sellerInfo"></sellerInfo>
+      </ul>
+    </div>
+  </div>
+</nav> 
+

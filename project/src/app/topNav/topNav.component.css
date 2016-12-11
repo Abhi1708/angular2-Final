@@ -1,0 +1,28 @@
+
+
+.navbar-default {
+	background-color: #006693;
+	width: 100%;
+	z-index: 100;
+}
+
+.navbar-brand {
+	color: white;
+	position: relative;
+	bottom: 5px;
+}
+
+ul a:hover {
+    color: white;
+    
+    }
+
+.servicemark:after { content: '\2120'; vertical-align: super; font-size: 0.8em; }
+
+
+li a {
+	color: white;
+}
+
+
+
