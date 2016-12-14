@@ -9,9 +9,10 @@ import { Menu } from '../../shared/menu';
 })
 export class MenuComponent implements OnInit {
   @Input() menu: Menu;
+ 
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {console.log('hello');
   }
 }

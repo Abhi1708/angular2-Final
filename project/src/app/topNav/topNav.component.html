@@ -10,7 +10,7 @@
           
         </menu>    
 
-        <sellerInfo [sellerInfo]="sellerInfo"></sellerInfo>
+        <sellerInfo [sellerInfo]="_appState | async"></sellerInfo>
       </ul>
     </div>
   </div>
