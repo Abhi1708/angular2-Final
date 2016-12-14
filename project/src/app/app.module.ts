@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Store, StoreModule } from '@ngrx/store';
 
 import { AppComponent } from "./app.component";
 import { DropdownDirective } from "./dropdown.directive";
@@ -11,6 +12,7 @@ import { MenuService } from "./shared/menu.service";
 import { SellerInfoService } from "./shared/sellerinfo.service";
 import { SellerInfoComponent } from './topNav/sellerInfo/sellerInfo.component';
 
+import { appState }  from './topNav/reducer.appstate';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SellerInfoComponent } from './topNav/sellerInfo/sellerInfo.component';
     SellerInfoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+	StoreModule.provideStore({appState}) 
   ],
   providers: [ MenuService, SellerInfoService],
   bootstrap: [AppComponent]
